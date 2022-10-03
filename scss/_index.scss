@@ -1,0 +1,96 @@
+@import "mixins.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #4b4b4b;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "header"
+    "galeria";
+    header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: header;
+        h1 {
+            color: #fff;
+            text-decoration: underline;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+    }
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        grid-area: galeria;
+        div {
+            @include img-properties;
+            &:nth-child(1) {
+                background-image: url(../assets/img/imagen1.jpg);
+            }
+            &:nth-child(2) {
+                background-image: url(../assets/img/imagen2.jpg);
+            }
+            &:nth-child(3) {
+                background-image: url(../assets/img/imagen10.jpg);
+            }
+            &:nth-child(4) {
+                background-image: url(../assets/img/imagen4.jpg);
+            }
+            &:nth-child(5) {
+                background-image: url(../assets/img/imagen5.jpg);
+            }
+            &:nth-child(6) {
+                background-image: url(../assets/img/imagen6.jpg);
+            }
+            &:nth-child(7) {
+                background-image: url(../assets/img/imagen7.jpg);
+            }
+            &:nth-child(8) {
+                background-image: url(../assets/img/imagen8.jpg);
+            }
+            &:nth-child(9) {
+                background-image: url(../assets/img/imagen9.jpg);
+            }
+            &:nth-child(10) {
+                background-image: url(../assets/img/imagen10.jpg);
+            }
+            &:nth-child(11) {
+                background-image: url(../assets/img/imagen11.jpg);
+            }
+            &:nth-child(12) {
+                background-image: url(../assets/img/imagen12.jpg);
+            }
+            &:nth-child(13) {
+                background-image: url(../assets/img/imagen13.jpg);
+            }
+            &:nth-child(14) {
+                background-image: url(../assets/img/imagen14.jpg);
+            }
+            &:nth-child(15) {
+                background-image: url(../assets/img/imagen15.jpg);
+            }
+            &:nth-child(16) {
+                background-image: url(../assets/img/imagen16.jpg);
+            }
+            &:nth-child(17) {
+                background-image: url(../assets/img/imagen17.jpg);
+            }
+            &:nth-child(18) {
+                background-image: url(../assets/img/imagen18.jpg);
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@mixin img-properties {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    margin: 15px;
+    box-shadow: 10px 10px 0px 0px #ffffffbf;
+    @media (max-width: 768px) {
+        flex-grow: 1;
+    }
+    transition: transform 0.5s;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
